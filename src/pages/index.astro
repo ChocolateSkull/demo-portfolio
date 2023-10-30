@@ -1,0 +1,25 @@
+---
+import About from "../components/about.astro";
+import ProjectCard from "../components/project-card.astro";
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+
+import { getCollection } from "astro:content";
+const projects = await getCollection("project");
+---
+
+<DefaultLayout title="Home">
+  <About />
+
+  <div class="flex justify-center flex-wrap">
+  {
+    projects.map((project) => (
+      <ProjectCard
+        projectName={project.data.title}
+        projectImage={project.data.image}
+        projectDesc={project.data.desc}
+        projectSlug={project.slug}
+      />
+    ))
+  }
+  </div>
+</DefaultLayout>

@@ -1,0 +1,12 @@
+---
+const { videoId } = Astro.props;
+---
+<!-- https://gist.github.com/christophengelmayer/0edd4d9b6fdeb6ff551fb80d957fd35d -->
+
+<div class="relative" style="padding-top: 56.25%">
+  <iframe
+    class="absolute inset-0 w-full h-full"
+    src={"https://www.youtube-nocookie.com/embed/" + videoId}
+    frameborder="0"
+    ></iframe>
+</div>

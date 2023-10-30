@@ -1,0 +1,22 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:18",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "astro-build.astro-vscode",
+        "aaron-bond.better-comments",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "bourhaouta.tailwindshades",
+        "eliostruyf.vscode-front-matter"
+      ]
+    }
+  },
+  "forwardPorts": [4321],
+  
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "npm install"
+}
