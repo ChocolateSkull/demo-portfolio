@@ -4,7 +4,7 @@ tags:
     - "test"
     - "test2"
 desc: "just a test project"
-image: "/demo-portfolio/images/alan.jpg"
+image: "/demo-portfolio/images/alanTuring.jpg"
 ---
 
 # Heading
